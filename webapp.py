@@ -9,7 +9,7 @@ app = Flask(__name__)
 # This is something random you generate.  
 # For more info see: https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY
 
-app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
+"""app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  """
                                      #The value should be set on the server. 
                                      #To run locally, set in env.bat (env.sh on Macs) and include that file in gitignore so the secret key is not made public.
 
