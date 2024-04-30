@@ -1,4 +1,4 @@
-# spis16-webapps-flask-sessions
+"# secure-quiz-app"
 
 Example of using Sessions with a Flask webapp
 
