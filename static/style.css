@@ -1,20 +1,9 @@
-.container {
-     display: grid;
-     grid-template-rows: repeat(4, 160px);
-     grid-template-columns: repeat(6, 160px);
-     /*height: 480px;*/
-     grid-gap: .7em;
-     /*margin-top: 5%*/
-   }
-
+* {
+	color:white
+}
 body {
-     margin: 5em 0 0 0;
-     padding: 5%;
-     line-height: 1.6;
-     word-spacing: 1.4px;
-     font-family: 'Roboto', sans-serif;
-     color: var(--clr-dark);
-     background-image: url("space.jpg");
+     font-family: "Garamond", "Serif", monospace;
+     background-image: url("https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg");
 }
 
 .button {
