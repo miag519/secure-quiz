@@ -36,9 +36,24 @@ def renderPage3():
     session["which2"]=request.form['which2']
     return render_template('page3.html')
     
+@app.route('/page4',methods=['GET','POST'])
+def renderPage4():
+    session["which3"]=request.form['which3']
+    return render_template('page4.html')
+    
+@app.route('/page5',methods=['GET','POST'])
+def renderPage5():
+    session["which4"]=request.form['which4']
+    return render_template('page5.html')
+    
+@app.route('/page6',methods=['GET','POST'])
+def renderPage6():
+    session["which5"]=request.form['which5']
+    return render_template('page6.html')
+    
 @app.route('/page7',methods=['GET','POST'])
 def renderPage7():
-    session["which3"]=request.form['which3']
+    session["answer"]=request.form['answer']
     return render_template('page7.html')
     
 
@@ -47,4 +62,4 @@ def renderPage7():
 
     
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)

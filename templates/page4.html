@@ -6,29 +6,31 @@
 
 <div class="container">
 	<div class="sidebar">
-	
+	<ul>
+		<button class="button"><a href="/startOver"><span>start over </span></a>
+	</ul>
 	</div>
 	
 	<div class="content">
 	<h1>What is this star pattern called?</h1>
 
-	<img src="https://t4.ftcdn.net/jpg/05/53/27/33/360_F_553273374_1hRtBY3St4bZVEimXDnxNG0UToN8mJeZ.jpg" alt="orion" height="auto" width="300px" margin-right:20px; style="image-rendering:pixelated;">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/ConstellationDraco.svg/1200px-ConstellationDraco.svg.png" alt="draco" height="auto" width="300px" margin-right:20px; style="image-rendering:pixelated;">
   
 	
 	<p>Choose which you think this is:</p>
-	<form action={{ url_for("renderPage7") }} method="POST">
-		<input type="radio" id="apus" name="whichStar" value="apus">
-		<label for="option">apus</label><br>
-		<input type="radio" id="lupus" name="whichStar" value="lupus">
-		<label for="option">lupus</label><br>
-		<input type="radio" id="cygnus" name="whichStar" value="cygnus">
-		<label for="option">cygnus</label><br><br>
+	<form action={{ url_for("renderPage5") }} method="POST">
+		<input type="radio" id="big dipper" name="which4" value="big dipper">
+		<label for="option">big dipper</label><br>
+		<input type="radio" id="aries" name="which4" value="aries">
+		<label for="option">aries</label><br>
+		<input type="radio" id="draco" name="which4" value="draco">
+		<label for="option">draco</label><br><br>
 		<input type="submit" value="Next →">
 	</form> 
 	<br>
-	<br>
-	<button class="button"><a href="/startOver"><span>start over </span></a>
+	
 	</div>
+
 	
 	
 	

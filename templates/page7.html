@@ -5,22 +5,25 @@
 {% block content %}
 <div class="container">
 	<div class="sidebar">
-	
+	<ul>
+		<button class="button"><a href="/startOver"><span>start over </span></a>
+	</ul>
 	</div>
 	
 	<div class="content">
-	<h1>Now I know:</h1>
+	<h1>user chose:</h1>
 
 	<ul>
- 		<li> you said it was a: {{ session['which1'] }} </li>
-		<li> the constellation you named was: {{ session['which2'] }} </li>
+ 		<li> 1st: {{ session['which1'] }} </li>
+		<li> 2nd: {{ session['which2'] }} </li>
 		<li> 3rd: {{ session['which3'] }} </li>
+		<li> 4th: {{ session['which4'] }} </li>
+		<li> 5th: {{ session['which5'] }} </li>
+		<li> 6th: {{ session['answer'] }} </li>
 	</ul>
 	<br>
-	<br>
-	<button class="button"><a href="/startOver"><span>start over </span></a>
+
 	</div>
-	
 	
 	
 	

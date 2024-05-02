@@ -6,26 +6,30 @@
 
 <div class="container">
 	<div class="sidebar">
-	
+	<ul>
+		<button class="button"><a href="/startOver"><span>start over </span></a>
+	</ul>
 	</div>
 	
 	<div class="content">
-	<h1>What is this star pattern called?</h1>
+	<h1>Lets finish off strong!</h1>
+	<h2>☁︎ Try solving this riddle ☁︎</h2>
+	<br>
+	<h3>What has to be passed first before you can pass yourself?</h3>
 
-	<img src="https://static.vecteezy.com/system/resources/previews/022/938/477/non_2x/orion-constellation-map-illustration-vector.jpg" alt="orion" height="auto" width="300px" margin-right:20px; style="image-rendering:pixelated;">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Man_Thinking_Cartoon_Vector.svg/1024px-Man_Thinking_Cartoon_Vector.svg.png" alt="orion" height="auto" width="300px" margin-right:20px; style="image-rendering:pixelated;">
   
   
-	<form action={{ url_for("renderPage3") }} method="POST">
-		<input type="radio" id="aries" name="whichStar" value="aries">
-		<label for="option">aries</label><br>
-		<input type="radio" id="lyra" name="whichStar" value="lyra">
-		<label for="option">lyra</label><br>
-		<input type="radio" id="orion" name="whichStar" value="orion">
-		<label for="option">orion</label><br><br>
-		<input type="submit" value="Next →">
+	<form action={{ url_for("renderPage7") }} method="POST">
+		answer:<br>
+		<input type="text" name="answer">
+		<input type="submit" value="Submit">
 	</form> 
 	</div>
+	<br>
 	
+	</div>
+
 	
 	
 	
