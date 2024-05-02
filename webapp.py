@@ -9,7 +9,7 @@ app = Flask(__name__)
 # This is something random you generate.  
 # For more info see: https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY
 
-"""app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  """
+app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable. 
                                      #The value should be set on the server. 
                                      #To run locally, set in env.bat (env.sh on Macs) and include that file in gitignore so the secret key is not made public.
 
@@ -36,7 +36,18 @@ def renderPage3():
     session["starPattern"]=request.form['starPattern']
     return render_template('page3.html')
     
+"""ctx.push()
+response = self.full_dispatch_request()
+except Exception as e:
+error = e
+response = self.handle_exception(e)
+except:  # noqa: B001
+error = sys.exc_info()[1]
+raise
+return response(environ, start_response)"""
+
+    
 
     
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)
