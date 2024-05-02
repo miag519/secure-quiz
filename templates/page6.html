@@ -14,25 +14,23 @@
 
 	<img src="https://static.vecteezy.com/system/resources/previews/022/938/477/non_2x/orion-constellation-map-illustration-vector.jpg" alt="orion" height="auto" width="300px" margin-right:20px; style="image-rendering:pixelated;">
   
-	
-	<p>Choose which you think this is:</p>
+  
 	<form action={{ url_for("renderPage3") }} method="POST">
-		<input type="radio" id="aries" name="which2" value="aries">
+		<input type="radio" id="aries" name="whichStar" value="aries">
 		<label for="option">aries</label><br>
-		<input type="radio" id="lyra" name="which2" value="lyra">
+		<input type="radio" id="lyra" name="whichStar" value="lyra">
 		<label for="option">lyra</label><br>
-		<input type="radio" id="orion" name="which2" value="orion">
+		<input type="radio" id="orion" name="whichStar" value="orion">
 		<label for="option">orion</label><br><br>
 		<input type="submit" value="Next →">
 	</form> 
-	<br>
-	<br>
-	<button class="button"><a href="/startOver"><span>start over </span></a>
 	</div>
 	
 	
 	
 	
 </div>
+
+
 
 {% endblock %}

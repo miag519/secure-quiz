@@ -4,25 +4,35 @@
 
 {% block content %}
 
-<div class="container mt-3">
-  <h1>Page 1: Lets start easy, what is this called?</h1>
+<div class="container">
+	<div class="sidebar">
+	
+	</div>
+	
+	<div class="content">
+	<h1>Let's start easy, what is this called?</h1>
 
- <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/2b50.png" alt="yellow star">
+	<img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/2b50.png" alt="yellow star" height="auto" width="300px" margin-right:20px; style="image-rendering:pixelated;">
   
   
-<p>Choose which you think this is:</p>
-<form action={{ url_for("renderPage2") }} method="POST">
-  <input type="radio" id="star" name="what_is_it" value="option">
-  <label for="option">Star</label><br>
-  <input type="radio" id="moon" name="what_is_it" value="option">
-  <label for="option">moon</label><br>
-  <input type="radio" id="sun" name="what_is_it" value="option">
-  <label for="option">sun</label><br><br>
-  <input type="submit" value="Submit">
-</form> 
+	<p>Choose which you think this is:</p>
+	<form action={{ url_for("renderPage2") }} method="POST">
+		<input type="radio" id="star" name="which1" value="star">
+		<label for="option">star</label><br>
+		<input type="radio" id="moon" name="which1" value="moon">
+		<label for="option">moon</label><br>
+		<input type="radio" id="sun" name="which1" value="sun">
+		<label for="option">sun</label><br><br>
+		<input type="submit" value="Next →">
+	</form> 
+	<br>
+	<br>
+	<button class="button"><a href="/startOver"><span>start over </span></a>
+	</div>
+	
+	
+	
+	
 </div>
-<br>
-<br>
-<br>
 
 {% endblock %}

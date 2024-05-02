@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}Page 7--Now we know everything!{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="sidebar">
+	
+	</div>
+	
+	<div class="content">
+	<h1>Now I know:</h1>
+
+	<ul>
+ 		<li> you said it was a: {{ session['which1'] }} </li>
+		<li> the constellation you named was: {{ session['which2'] }} </li>
+		<li> 3rd: {{ session['which3'] }} </li>
+	</ul>
+	<br>
+	<br>
+	<button class="button"><a href="/startOver"><span>start over </span></a>
+	</div>
+	
+	
+	
+	
+</div>
+
+
+
+{% endblock %}

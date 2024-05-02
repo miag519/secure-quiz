@@ -28,26 +28,23 @@ def renderPage1():
 
 @app.route('/page2',methods=['GET','POST'])
 def renderPage2():
-    session["what_is_it"]=request.form['what_is_it']
+    session["which1"]=request.form['which1']
     return render_template('page2.html')
 
 @app.route('/page3',methods=['GET','POST'])
 def renderPage3():
-    session["starPattern"]=request.form['starPattern']
+    session["which2"]=request.form['which2']
     return render_template('page3.html')
     
-"""ctx.push()
-response = self.full_dispatch_request()
-except Exception as e:
-error = e
-response = self.handle_exception(e)
-except:  # noqa: B001
-error = sys.exc_info()[1]
-raise
-return response(environ, start_response)"""
+@app.route('/page7',methods=['GET','POST'])
+def renderPage7():
+    session["which3"]=request.form['which3']
+    return render_template('page7.html')
+    
+
 
     
 
     
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=False)
