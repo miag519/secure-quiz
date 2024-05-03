@@ -25,6 +25,23 @@ def startOver():
 @app.route('/page1')
 def renderPage1():
     return render_template('page1.html')
+    
+def result():
+    result = 0
+    if session["which1"] == "star":
+        result += 1
+ 
+    if session["which2"] == "orion":
+        result += 1
+    
+    if session["which3"] == "cygnus":
+        result += 1
+    
+    if session["which4"] == "draco":
+        result += 1
+    
+    if session["which5"] == "hydrus":
+        result += 1
 
 @app.route('/page2',methods=['GET','POST'])
 def renderPage2():
@@ -54,7 +71,14 @@ def renderPage6():
 @app.route('/page7',methods=['GET','POST'])
 def renderPage7():
     session["answer"]=request.form['answer']
-    return render_template('page7.html')
+    return render_template('page7.html', result=result)
+    
+
+
+
+
+    
+    
     
 
 

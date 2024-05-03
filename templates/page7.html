@@ -5,6 +5,9 @@
 {% block content %}
 <div class="container">
 	<div class="sidebar">
+	<div class="progress">
+			<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%"></div>
+		</div>
 	<ul>
 		<button class="button"><a href="/startOver"><span>start over </span></a>
 	</ul>
@@ -20,6 +23,7 @@
 		<li> 4th: {{ session['which4'] }} </li>
 		<li> 5th: {{ session['which5'] }} </li>
 		<li> 6th: {{ session['answer'] }} </li>
+		<li> score: {{ result }} </li>
 	</ul>
 	<br>
 
