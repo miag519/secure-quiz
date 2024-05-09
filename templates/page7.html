@@ -1,16 +1,15 @@
 {% extends "layout.html" %}
 
-{% block title %}Page 7--Now we know everything!{% endblock %}
+{% block title %}Page 7--Get your score{% endblock %}
 
 {% block content %}
 <div class="container">
 	<div class="sidebar">
+	<a href="/startOver"><span>start over</span></a>
+	<br>
 	<div class="progress">
 			<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%"></div>
-		</div>
-	<ul>
-		<button class="button"><a href="/startOver"><span>start over </span></a>
-	</ul>
+	</div>
 	</div>
 	
 	<div class="content">
@@ -22,8 +21,15 @@
 		<li> 3rd: {{ session['which3'] }} </li>
 		<li> 4th: {{ session['which4'] }} </li>
 		<li> 5th: {{ session['which5'] }} </li>
-		<li> 6th: {{ session['answer'] }} </li>
+		<li> 6th: {{ session['which6'] }} </li>
 		<li> score: {{ result }} </li>
+        <li> You answered question 1 {{ answer1 }}. </li> 
+        <li> you answered question 2 {{ answer2 }}. </li>
+        <li> You answered question 3 {{ answer3 }}. </li>
+        <li> You answered question 4 {{ answer4 }}. </li>
+        <li> You answered question 5 {{ answer5 }}. </li>
+        <li> You answered question 6 {{ answer6 }}. </li>
+</ul>
 	</ul>
 	<br>
 
